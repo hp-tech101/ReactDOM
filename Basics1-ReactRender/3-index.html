@@ -1,0 +1,74 @@
+<!--
+    
+    3. Output multiple elements (as one) - 
+        <h1> Diet Plan </h1>
+        <h2> Fruits </h2> 
+        <h4>
+            <ul> 
+                <li>banana yellow</li>
+                <li>banana black</li>
+                <li>banana white</li>
+                <li>banana brown</li>
+            </ul>
+        </h4>        
+        <h2> Veggies </h2> 
+        <h4>
+            <ul> 
+                <li>eggplant yellow</li>
+                <li>eggplant black</li>
+                <li>eggplant white</li>
+                <li>eggplant brown</li>
+            </ul>
+        </h4>        
+        Rule: React is going to output only one element hence JSX elements must be wrapped in one , usually in a div
+-->
+
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Multiple elements in one</title>
+        <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+        <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    </head>
+    <body>
+        <!-- html element to be rendered using React-->
+        <div id="root">Not rendering react yet</div>
+ 
+        <!-- Using babel -->
+        <script type="text/babel">
+        var elemToRender = <div>
+                <h1> Diet Plan </h1>
+        <h2> Fruits </h2> 
+        <h4>
+            <ul> 
+                <li>banana yellow</li>
+                <li>banana black</li>
+                <li>banana white</li>
+                <li>banana brown</li>
+            </ul>
+        </h4>        
+        <h2> Veggies </h2> 
+        <h4>
+            <ul> 
+                <li>eggplant yellow</li>
+                <li>eggplant black</li>
+                <li>eggplant white</li>
+                <li>eggplant brown</li>
+            </ul>
+        </h4>
+        </div>;
+        var locationToReder = document.getElementById("root");
+        
+        ReactDOM.render(
+            elemToRender,
+            locationToReder
+        );
+        </script>
+    </body>
+</html>

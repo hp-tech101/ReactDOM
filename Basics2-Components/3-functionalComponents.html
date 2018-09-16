@@ -1,0 +1,60 @@
+<!--
+    1. Functional Stateless Components
+
+    WebTeam
+-->
+
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Multiple elements in one</title>
+        <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+        <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+        <link rel="stylesheet" href="main.css">
+
+    </head>
+    <body>
+        <!-- html element to be rendered using React-->
+        <div id="root">Not rendering react yet</div>
+
+
+        <!-- Using babel -->
+        <script type="text/babel">
+        var targetElement = document.getElementById("root");
+        //WebTeam : Functional Stateless Component
+        var WebTeam = function() {
+            return (
+              <div>
+                    <h1>Dumbass TeamMembers of the most Awesome Team</h1>  
+                    <h2><i>
+                        <ul>
+                            <li className="yellow">Yus</li>    
+                            <li className="brown">Bill</li>    
+                            <li className="yellow">Sheldon</li>    
+                            <li className="brown">Zahid</li>    
+                            <li className="yellow">Brett</li>    
+                            <li className="brown">Allen</li>    
+                            <li className="yellow">Kristy</li>    
+                            <li className="brown">Jose</li>    
+                            <li className="yellow">HP</li>    
+                        </ul>
+                    </i></h2>
+              </div>
+              
+              
+            );
+        };
+
+        ReactDOM.render(
+            <WebTeam/>,
+            targetElement
+        );    
+        </script>
+    </body>
+</html>
